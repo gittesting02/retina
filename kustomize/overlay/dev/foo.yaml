@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: foo
+  labels:
+    environment-id: env_981e98a4-fe72-41df-9031-60275f5ae496
+    project-id: project_b913d9a0-65cf-49d1-8488-d3c93f28c550
+    project-name: retina
+    environment-name: dev
+    organization-id: org_01b50229-db34-43d4-8f3e-d1aeb683d900
