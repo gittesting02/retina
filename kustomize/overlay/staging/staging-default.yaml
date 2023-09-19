@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: staging-default
+  labels:
+    environment-id: env_b8bfd15d-5abe-45a5-951c-eb732827b852
+    project-id: project_b913d9a0-65cf-49d1-8488-d3c93f28c550
+    project-name: retina
+    environment-name: staging
+    organization-id: org_01b50229-db34-43d4-8f3e-d1aeb683d900
