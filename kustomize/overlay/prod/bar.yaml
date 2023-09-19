@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: bar
+  labels:
+    environment-id: env_3104fb4d-b0ca-424e-8239-c0c2aee0a257
+    project-id: project_b913d9a0-65cf-49d1-8488-d3c93f28c550
+    project-name: retina
+    environment-name: prod
+    organization-id: org_01b50229-db34-43d4-8f3e-d1aeb683d900
