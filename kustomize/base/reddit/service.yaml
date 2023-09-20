@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations: {}
+  labels:
+    app: reddit
+    application-id: app_dbf62a7c-f305-49a8-a467-3a7085763395
+  name: reddit
+spec:
+  selector:
+    app: reddit
