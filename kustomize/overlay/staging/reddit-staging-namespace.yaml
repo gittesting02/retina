@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: reddit-staging
+  labels:
+    environment-id: env_b0d7f039-4e90-48d8-a80f-adcdacbaeb2f
+    project-id: project_f43e1d57-bf06-4f80-bb30-c6f304040e22
+    project-name: reddit
+    environment-name: staging
+    organization-id: org_99bfadb5-996a-47d5-a5fc-442c14a28627
