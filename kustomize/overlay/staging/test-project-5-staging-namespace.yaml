@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: test-project-5-staging
+  labels:
+    environmentId: env_def110d8-1810-4037-8a11-0ad80e3df862
+    projectId: project_996397d6-49fd-4d78-92e4-abc154fbe021
+    projectName: test-project-5
+    environmentName: staging
+    organizationId: org_12ab5a69-48a2-42d7-ad36-d59a2bca4805
