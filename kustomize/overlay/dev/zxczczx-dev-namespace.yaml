@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: zxczczx-dev
+  labels:
+    environmentId: env_c30fac34-a39d-4d98-914c-8c9c90d9c064
+    projectId: project_27b9f423-1814-4506-96f4-caad344a7cf2
+    projectName: zxczczx
+    environmentName: dev
+    organizationId: org_12ab5a69-48a2-42d7-ad36-d59a2bca4805
