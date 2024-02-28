@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test-app-check-1-v1-0-0
+  labels:
+    app: test-app-check-1-v1-0-0
+    applicationId: app_f62b6a0e-8b72-4958-8148-7a92003d74c5
+    version: v1.0.0
+    organizationId: org_12ab5a69-48a2-42d7-ad36-d59a2bca4805
+    projectId: project_4c08b49f-6fa8-404f-8a99-8672a582a48e
+spec:
+  selector:
+    matchLabels:
+      app: test-app-check-1-v1-0-0
+  template:
+    metadata:
+      labels:
+        app: test-app-check-1-v1-0-0
+        applicationId: app_f62b6a0e-8b72-4958-8148-7a92003d74c5
+        version: v1.0.0
+        organizationId: org_12ab5a69-48a2-42d7-ad36-d59a2bca4805
+        projectId: project_4c08b49f-6fa8-404f-8a99-8672a582a48e
