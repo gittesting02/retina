@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: new-project-1-dev
+  labels:
+    environmentId: env_11f78b4e-95b8-4e42-9097-346b9293a907
+    projectId: project_0b7d6fe7-dff3-4520-bb5d-8f1be05f35bd
+    projectName: new-project-1
+    environmentName: dev
+    organizationId: org_12ab5a69-48a2-42d7-ad36-d59a2bca4805
