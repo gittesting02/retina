@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hey-staging
+  labels:
+    environmentId: env_cefdf9b2-372c-4af1-a3de-c5d07a2c0977
+    projectId: project_2ec86115-876e-4d5a-948c-5f5156998423
+    projectName: hey
+    environmentName: staging
+    organizationId: org_12ab5a69-48a2-42d7-ad36-d59a2bca4805

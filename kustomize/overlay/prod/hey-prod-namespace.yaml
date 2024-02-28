@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: hey-prod
+  labels:
+    environmentId: env_05979472-68a0-45b8-8a26-922594492c82
+    projectId: project_2ec86115-876e-4d5a-948c-5f5156998423
+    projectName: hey
+    environmentName: prod
+    organizationId: org_12ab5a69-48a2-42d7-ad36-d59a2bca4805
