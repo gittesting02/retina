@@ -1,0 +1,46 @@
+apiVersion: transformers.customplugin.co/v1
+kind: SkyUAppTransformer
+metadata:
+  name: skyu-deployment
+  annotations:
+    config.kubernetes.io/function: |
+      exec:
+        path: skyu-app-transformer
+spec:
+  applicationContainers:
+    - imageTag: latest
+      cpuRequestMili: 100
+      cpuLimitMili: 150
+      memoryRequestMb: 350
+      memoryLimitMb: 450
+      args: []
+      command: []
+      configMounts: []
+      applicationPorts: []
+      healthChecks: []
+      name: test-app-flow-1-main
+      imagePullPolicy: Always
+      imageRegistry: docker.io//test-app-flow-1
+      imagePullSecretName: imagepull-docker
+      credentialId: credential_efd449c9-478a-4ae9-aa6f-f25fd0d03113
+  minReplicas: 1
+  maxReplicas: 1
+  terminationGracePeriodSeconds: 60
+  nodeSelector: {}
+  suspend: false
+  ttlSecondsAfterFinished: 0
+  labels:
+    app: test-app-flow-1
+    version: v1.0.0
+    applicationId: app_ba148696-bb4c-4414-9519-6c9db078d000
+    projectId: project_4c08b49f-6fa8-404f-8a99-8672a582a48e
+    organizationId: org_12ab5a69-48a2-42d7-ad36-d59a2bca4805
+    environmentId: env_d90d84f3-7be5-4a7f-847c-c5a1f8365db1
+    environmentName: staging
+  horizontalAutoScalingRules: []
+  volumes: []
+  type: Deployment
+  name: test-app-flow-1
+  serviceType: ClusterIP
+  version: v1.0.0
+  namespace: test-project-10-staging

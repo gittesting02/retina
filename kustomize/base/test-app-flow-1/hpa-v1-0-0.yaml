@@ -1,0 +1,16 @@
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  annotations: {}
+  name: test-app-flow-1-v1-0-0
+  labels:
+    app: test-app-flow-1-v1-0-0
+    applicationId: app_ba148696-bb4c-4414-9519-6c9db078d000
+    version: v1.0.0
+    organizationId: org_12ab5a69-48a2-42d7-ad36-d59a2bca4805
+    projectId: project_4c08b49f-6fa8-404f-8a99-8672a582a48e
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: test-app-flow-1-v1-0-0
